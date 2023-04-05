@@ -7,9 +7,12 @@
 # 1. Start with an array of strings with a mix of uppercase and lowercase letters. 
 #Print every word in all lowercase letters.
 # 1. Given an array of strings, return only the words that begin with the letter "t".
-# 1. Start with an array of strings. Print only the words that include the letter combination "ing".
-# 1. Start with an array of travel destinations. Print every travel destination in alphabetical order embedded in a sentence using string interpolation. 
-# For example, if the destination is "New York City", print something like "The next place I want to visit is New York City!" 
+# 1. Start with an array of strings. Print only the words that include 
+#the letter combination "ing".
+# 1. Start with an array of travel destinations. Print every travel destination in 
+#alphabetical order embedded in a sentence using string interpolation. 
+# For example, if the destination is "New York City", print something like 
+#"The next place I want to visit is New York City!" 
 # 1. Given a sentence with only lowercase letters, print the same sentence with the first letter of every word capitalized. 
 # For example, if you were given "Turing is the best", return "Turing Is The Best" instead!
 
@@ -41,3 +44,21 @@ words.each do |word|
     end
 end
 
+puts "Starting again with an array of strings. Final output will only put words that include 'ing' in that exact order."
+puts "It'll be another utilization of the each method, containing an if statement, using the .include method?"
+activities = ["Napping", "Relaxing", "Hike", "Ice cream social"]
+activities.each do |activity|
+    if activity.include?("ing")
+        puts activity
+    end
+end
+
+# puts "Create an array of travel destinations. Print every destination in alphabetical order while also setting up a string interpolation.."
+# puts "we'll do the each method here again, with a .sort method possibly? And then within one of the methods we'll set up the interpolation"
+# destinations = ["Barcelona", "Hungary", "Turkey", "Japan", "Austria", "New York"]
+# destinations.sort.each do |destination, index|
+#     puts destination    
+# end
+
+# message = "The next place I want to travel to is #{index}, #{destination}"
+# puts message
