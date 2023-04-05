@@ -25,11 +25,19 @@ end
 
 
 puts "Start with an array of strings that have mixed upper and lowercase letters. Then I need to make the output return the strings in all lowercase letters."
-puts "psuedocode is an array and then some sort of method, maybe .lowcase"
+puts "psuedocode is an array, each method, and then some sort of method, maybe .lowcase or similar"
 nature_things = ["wAtERfaLl", "aNIMals", "CANyonS"]
 nature_things.each do |nature|
 puts nature.downcase
 end
 
 
+puts "Start with an array of strings and return only words that BEGIN with t"
+puts "psueocode will be an array, an if statement with a method, maybe .starts_with?"
+words = ["Treat", "Talented", "Beam", "Oars", "Mouse"]
+words.each do |word|
+    if word.start_with?("T")
+        puts word
+    end
+end
 
